@@ -1,0 +1,583 @@
+:root {
+    --color-primary: #000000;
+    /*RAIZ ONDE SERA LINKADAS EM OUTRAS PAGINAS DE CSS*/
+}
+
+/*AQUI COMEÇAMOS SEMPRE POR ESSE PADRÃO PARA PODER RETIRAR AS BORDAS ETC*/
+* {
+    margin: 0;
+    /*A propriedade margin do CSS define a área de margem nos quatro lados do elemento. É uma abreviação que define todas as margens individuais de uma só vez: margin-top, margin-right (en-US), margin-bottom, e margin-left (en-US).*/
+    padding: 0;
+    /*A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente (padding-top, padding-right, padding-bottom, padding-left).*/
+    box-sizing: border-box;
+    /*A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar essa propriedade para emular o comportamento dos navegadores (browsers) que não suportam corretamente a especificação da propriedade CSS box model.*/
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /*tipo da fonte que será usada no elemento selecionado*/
+}
+
+.container {
+    width: 1170px;
+    /*tamanho*/
+    margin: 0 auto;
+    /*margem que terá dos lados e do top e bot*/
+}
+
+/*********** 
+    Home
+************/
+
+.home {
+    position: relative; 
+    /*para que os filhos dele possam ficar em posições relativas a ele*/
+    background-size: cover;
+    /*PARA A FOTO SE AJUSTAR AO TAMANHO DA TELA*/
+    background-repeat: no-repeat;
+    /*PARA QUE A FOTO NÃO SE REPITA*/
+    background-image: url(../images/surf5.jpg); 
+    /*IMPORTAÇÃO DA IMAGEM*/
+    height: 100vh;
+    /*VIEWPORT HEIGTH SE REFERE A 100% DA ÁREA VISIVEL DO NAVEGADOR*/
+    background-attachment: fixed;
+}
+
+.home .header {
+    padding: 30px 0;
+    /*distanciamento*/
+}
+
+.home .header .nav {
+    display: flex;
+    /*ALINHAR TODOS OS ITENS LADO A LADO*/
+    justify-content: center; 
+    /*centralizar os itens*/
+}
+
+.home .header .nav ul {
+    display: flex; 
+    /*ALINHAR TODOS OS ITENS LADO A LADO*/
+    list-style: none; 
+    /*RETIRAR AS "BOLINHAS" DOS LINKS*/
+}
+
+.home .header .nav ul li {
+    display: flex; 
+    /*ALINHAR TODOS OS ITENS LADO A LADO*/
+    align-items: center; 
+    /*ALINHAR TODOS OS ITENS NA VERTICAL AO CENTRO*/
+    justify-content: center; 
+    /*alinhar tudo que está dentro para o centro*/
+    width: 150px;
+    /*tamanho*/
+}
+
+.home .header .nav ul li a {
+    color: #000000;
+    /*cor dos âncoras*/
+    text-transform: uppercase;
+    /*deixar todas as letras maiusculas*/
+    text-decoration: none;
+    /*tirar o underline*/
+    font-weight: bold; 
+    /*peso da fonte nesse caso negrito*/
+    font-size: 12px;
+    /*tamanho da fonte*/
+    padding: 20px;
+    /*distanciamento*/
+}
+
+.ondalogo {
+    width: 150px;
+    /*tamanho da logo*/
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary); 
+    /*bordas dos links do menus*/
+    color: var(--color-primary); 
+    /*puxando as configurações do root*/
+}
+
+.home .header .nav ul li .ondalogo {
+    margin: 0 30px;
+    /*margem dos lados, top e bot*/
+}
+
+
+/*************** 
+    Home-Banner
+****************/
+
+.banner-prancharia {
+    width: 50px; 
+    /*tamanho da foto banner*/
+}
+
+.home .banner {
+    position: absolute;
+    /*para que a sua posição fique de acordo com o elemento pai*/
+    top: 50%;
+    /*distancia do top*/
+    left: 50%;
+    /*distancia do lado esquerdo*/
+    height: 270px;
+    /*altura*/
+    width: 770px;
+    /*tamanho*/
+    margin-left: -385px;
+    /*margem da esquerda*/
+    margin-top: -75px;
+    /*margem de cima*/
+    color: #000000; 
+    /*cor da letra*/
+    text-align: center; 
+    /*centralizar o texto no meio*/
+
+}
+
+.home .banner span {
+    display: block; 
+    /*para empurrar os elementos para baixo*/
+}
+
+.home .banner .slogan1 {
+    color: #000000; 
+    /*cor da letra*/
+    text-transform: uppercase; 
+    /*deixar o texto em caixa alta*/
+    letter-spacing: 4px; 
+    /* espaçamento das letras*/
+    font-size: 14px; 
+    /*peso da fonte*/
+}
+
+.home .banner h1 {
+    font-size: 120px; 
+    /*tamanho da letra*/
+    color: #000000;
+}
+
+.home .banner .slogan2 {
+    margin-bottom: 15px;
+    /*margem de baixo*/
+}
+
+/*********** 
+    about
+************/
+ .about {
+    background-repeat: no-repeat;
+    /*para que o backgorund selecionado nao se repita*/
+    background-size: cover;
+    /*para que o background cubra toda a area visivel*/
+    margin-top: 20px;
+    /*margem de cima*/
+}
+
+.about .container {
+    display: flex; 
+    /*para que os filhos do container estejam lado a lado , nesse caso o timing e o experience*/
+}
+
+.about .timing {
+    width: 33%; 
+    /*largura*/
+    /*height: 500px;*/ /*altura*/
+    background-image: url(../images/surf\ 1.1.jpg); 
+    /*background da kombi*/
+    padding: 20px; 
+    /*para empurrar os elementos para baixo*/
+
+}
+
+.about .timing .overlay {
+    background: rgb(0, 0, 0, 0.8);
+    /*cor transparente do fundo*/
+    text-align: center; 
+    /*alinhar texto ao centro*/
+    padding: 40px 20px;
+    /*espaçamento*/
+}
+
+.about .experience {
+    width: 66%;
+    /*tamanho*/
+    color: #000000;
+    /*cor da letra*/
+    margin-left: 7%;
+    /*margem da esquerda*/
+    margin-top: 100px;
+    /*margem de cima*/
+}
+
+.logo2 {
+    width: 50px;
+    /*tamanho*/
+}
+
+.about .timing h3 {
+    color: #ffffff;
+    /*cor da letra*/
+    text-transform: uppercase; 
+    /*letra maiuscula*/
+    border-bottom: 1px solid #ffffff;
+    /*linha em baixo da borda*/
+    width: fit-content;
+    /*ajustar da maneira que eu quiser sem ser o padrão de um h3*/
+    margin: 0 auto 30px auto;
+    /*alinhar ao centro*/
+    font-size: 30px;
+    /*tamanho da fonte*/
+}
+
+.about .timing .text {
+    margin: 30px 0;
+    /*margem, nesse caso foram selecionadas 30px para os lados e 0 para top e bot*/
+}
+
+.about .timing .text:after{
+    content: '•';
+    /*conteudo que eu quero inserir*/
+    font-size: 25px;
+    /*tamanho*/
+    display: block;
+    /*jogar o resto pra baixo*/
+    color: #ffffff;
+    /*cor*/
+    margin-top: 15px;
+    /*margem do topo*/
+}
+
+.about .timing .text:last-of-type:after { 
+    /*las-of-type para que a regra se aplique apenas a ultima bolinha*/
+    content: '|';
+    /*conteudo*/
+}
+
+.about .timing .text h4 {
+    color: #808080;
+    /*cor da letra*/
+    font-weight: 400;
+    /*espessura da fonte*/
+    font-size: 15px;
+    /*tamanho da fonte*/
+}
+
+.about .timing span {
+    color: #ffffff;
+    /*cor da letra*/
+    font-size: 15px;
+    /*tamanho da fonte*/
+    display: block;
+    /*para que o elemento gere uma caixa do tipo bloco*/
+}
+
+.experience{
+    border-radius: 15px;
+    /*borda no elemento*/
+}
+
+.prancha1-1 {
+    width: 300px;
+    /*tamanho*/
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    /*espessura da fonte*/
+    font-size: 40px;
+    /*tamanho da fonte*/
+}
+
+.about .experience h2:after {
+    display: block;
+    /*para que o elemento gere uma caixa de tipo bloco*/
+    content: '';
+    /*obrigatorio te o conteudo mesmo que vazio*/
+    width: 100px;
+    /*tamanho*/
+    height: 3px;
+    /*altura*/
+    background-color: #ffffff;
+    /*cor da letra*/
+    margin: 20px 0;
+    /*margem para os dois lados ao mesmo tempo*/
+}
+
+.about .experience .text {
+    display: flex;
+    /*display flex, faz com que os elementos selecionados fiquem lada a lado*/
+    justify-content: space-between;
+    /*para que haja um espaçamento automatico entre os elementos*/
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    /*margem especificamente de baixo*/
+    font-weight: 400;
+    /*espessura da fonte*/
+    font-size: 17px;
+    /*tamanho da fonte*/
+}
+
+/*************** 
+    Services
+****************/
+
+.services{
+    padding: 100px 0;
+    /*propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente (padding-top, padding-right, padding-bottom, padding-left).*/
+    text-align: center;
+    /*alinhar os textos ao centro*/
+}
+
+.services h2 {
+    font-weight: 400;
+    /*espessura da fonte*/
+    font-size: 50px;
+    /*tamanho da fonte*/
+    margin-bottom: 10px;
+    /*margem especifica para baixo*/
+}
+
+.services .boxes {
+    display: flex;
+    /*para que os elementos selecionados fiquem lado a lado*/
+    margin-top: 50px;
+    /*margem especifica para o top*/
+    justify-content: space-between;
+    /*para que haja um espaçamento natural entre os elementos*/
+}
+
+.services .box {
+    border: 3px solid #000000;
+    /*cor da borda*/
+    padding: 40px 30px;
+    /*propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente (padding-top, padding-right, padding-bottom, padding-left).*/
+    margin: 30px;
+    /*A propriedade margin do CSS define a área de margem nos quatro lados do elemento. É uma abreviação que define todas as margens individuais de uma só vez: margin-top, margin-right (en-US), margin-bottom, e margin-left (en-US).*/
+}
+
+.services .box h4 {
+    color: #000000;
+    /*cor da letra*/
+    margin-top: 30px;
+    /*margem especifica para o top*/
+}
+
+.services .box p {
+    margin-top: 20px;
+    /*margem especifica para o top*/
+    font-size: 14px;
+    /*tamanho da fonte*/
+    line-height: 25px;
+    /*espacamento entre linhas*/
+}
+
+/*************** 
+    Agendamento
+****************/
+.appointment {
+    padding: 100px 0;
+    background: #000000;
+    /*cor do background da section*/
+    height: 100vh;
+    /*vh é a área visivel*/
+    /*background-image: url(../images/ocean.jpg);
+    background da section
+    background-repeat: no-repeat;
+    para que o background nao se repita
+    background-size: cover;
+    para que o background cubra toda a area*/
+    color: #ffffff;
+    /*cor da letra*/
+    background-image: url(../images/pranchamadeira.png);
+    /*background da prancha de madeira*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*para que o background não se repita*/
+    background-position: right top;
+    /*posição do background*/
+    background-size: 300px;
+    /*tamanho do background*/
+}
+
+.appointment h2 {
+    font-weight: 400;
+    /*espessura da fonte*/
+    font-size: 50px;
+    /*tamanho da fonte*/
+    margin-bottom: 10px;
+    /*margem especifica para baixo*/
+    text-align: center;
+    /*alinhar os textos ao centro*/
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .personal-data .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .personal-data .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select {
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.appointment textarea {
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.appointment button {
+    background: #ffffff;
+    color: #000000;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+/*************** 
+    Gallery
+****************/
+.gallery {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.gallery h2 {
+    font-weight: 400;
+    /*espessura da fonte*/
+    font-size: 50px;
+    /*tamanho da fonte*/
+    margin-bottom: 10px;
+    /*margem especifica para baixo*/
+    text-align: center;
+    /*alinhar os textos ao centro*/
+}
+
+.gallery img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery .gallery-wrapper {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid #000000;
+    margin: 6px;
+    width: 30%;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
+
+/*************** 
+    Location
+****************/
+
+.location {
+    padding: 100px 0;
+    background-image: url(../images/surf\ 1.jpg);
+    background-attachment: fixed;
+    background-size: cover;   
+}
+
+.location .head {
+    background-color: #1f1f1f;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.location .head .info .text span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+    color: #ffffff;
+}
+
+.location .head .info .text span:last-child {
+    color: #ffffff;
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+/*************** 
+    Footer
+****************/
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}

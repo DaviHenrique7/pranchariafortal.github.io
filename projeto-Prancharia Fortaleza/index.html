@@ -1,0 +1,351 @@
+<!DOCTYPE html> 
+<!--TIPO DO DOCUMENTO-->
+<html lang="pt-br"> 
+<!--IDIOMA PADRÃO EM QUE A PÁGINA SERÁ TRADUZIDA-->
+<head><!--ONDE EU COLOCAREI TODAS AS INFORMAÇÕES DA MINHA PÁGINA-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prancharia Fortaleza</title> 
+    <!--TITULO QUE FICARÁ NA VISIVEL NA ABA-->
+    <link rel="shortcut icon" href="images/logo.png" type="image/png"> 
+    <!--ICONE QUE FICARÁ AO LADO DO TITLE NA ABA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <!--FONTES DE QUE SERÃO LINKADAS AO CSS E USADAS NA PÁGINA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!--FONTES DE QUE SERÃO LINKADAS AO CSS E USADAS NA PÁGINA-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <!--FONTES DE QUE SERÃO LINKADAS AO CSS E USADAS NA PÁGINA-->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!--LINK QUE SERÁ FEITO PARA PUXAR AS INFORMAÇÕES DO CSS-->
+</head>
+<body> <!--TODO O CONTEUDO QUE ESTARÁ NA MINHA PÁGINA-->
+    
+    <section id="home" class="home"> 
+        <!--COMEÇAMOS POR UMA SECTION, AFINAL A PÁGINA É DIVIDA POR SEÇÕES E AQUI TEMO A PRIMIERA QUE É O HOME-->
+        <header class="header"> 
+            <!--HEADER FICA DENTRO DA PRIMEIRA SEÇÃO, POIS É O TOPO DA PAGINA O MENU PRINCIPAL-->
+            <nav class="nav"> 
+                <!--NAV PARA INDICAR SEMANTICAMENTE UMA BARRA E UMA ÁREA DE NAVEGAÇÃO-->
+                <ul> 
+                    <!--FAREMOS OS ITENS DO MENU ATRAVES DE UMA LISTA--> <!--UL É O PADRÃO PARA A ABERTURA DE UMA LISTA DE ITENS-->
+                    <li> 
+                        <!--PRIMEIRO ITEN DA LISTA... OS ITENS SÃO INDICADOS POR LI-->
+                        <a href="#home">Home</a> 
+                        <!--HIPERLINK DO ITEN-->
+                    </li>
+                    <li> 
+                        <!--SEGUNDO ITEN DA LISTA-->
+                        <a href="#appointment">Agendamento</a> 
+                        <!--HIPER LINK DO ITEN-->
+                    </li>
+                    <li> 
+                        <!--TERCEIRO ITEN DA LISTA-->
+                        <a href="#services">Serviços</a> 
+                        <!--HIPERLINK DO ITEN-->
+                    </li>
+                    <LI>
+                        <img src="images/surf.png" class="ondalogo">
+                    </LI>
+                    <li>
+                        <a href="#gallery">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#location">Localização</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> <!--FECHAMENTO DA TAG HEADER , POIS TODOS OS ITENS QUE IRÃO FICAR NELA JÁ ESTÃO POSTOS-->
+
+        <div class="banner"> <!--DIVS E SECTIONS POSSUEM A MESMA FUNÇÃO MÁS COM VALORES SEMÂNTICOS DIFERENTES, AQUI ESTAMOS CRIANDO A PARTE CENTRAL DO HOME-->
+            <span class="slogan1">Profissionalismo e Excelência!</span> 
+            <!--SPAN OU H2-->
+            <h1> Prancharia Fortaleza </h1> 
+            <!--TITULO PRINCIPAL DO SITE-->
+            <span class="slogan2">O melhor lugar para adquirir a sua prancha nova!</span> 
+            <!--SPAN OU H2-->
+            <img src="images/banner.png" alt="bannerprancharia" class="banner-prancharia"> 
+            <!--IMAGEM DE FUNDO DO HOME-->
+        </div>
+
+    </section> <!--FECHAMENTO DA PRIMEIRA SECTION , O HOME-->
+
+    <section id="about" class="about"> 
+        <!--ABERTURA DA SEGUNDA SECTION DO SITE , OU SEJA A SEGUNDA PARTE-->
+        <div class="container"> 
+            <!--O OBJETIVO DESSE CONTAINER É PUXAR AS DIVS ABAIXO PARA O CENTRO, PORÉM SEM FAZER ESSE PROCESSO REPETIDAMENTE-->
+            <div class="timing"> 
+                <!--PRIMEIRA PARTE DA SECTION ABOUT, PRIMEIRA METADE, ESQUERDA-->
+                <div class="overlay"> 
+                    <!--BACKGROUND PRETO TRANSPARENTE, TODAS AS OUTRAS DIVS SÃO FILHAS DELA POIS O CONTEUDO PRECISA FICAR EM CIMA DO TRANSPARENTE-->
+                    <img src="images/logo2.png" alt="logo2" class="logo2"> 
+                    <!--LOGO EM CIMA DO BACKGROUND-->
+                    <h3>Horários</h3> 
+                    <!--H3 POIS SÃO SUBTITULOS-->
+
+                    <div class="text"> 
+                        <!--PRIMEIRA DIV COM A PRIMEIRA INFORMAÇÃO QUE SERÁ COLOCADA NO TIMING-->
+                        <h4>Segunda-feira à Sexta-feira</h4> 
+                        <!--INFORMAÇÃO DA DIV COM UM H4 POIS É UM OUTRO SUBTITULO-->
+                        <span>09:00 AM - 16:00 PM</span> 
+                        <!--SPAN POIS É UMA SIMPLES INFORMAÇÃO E NÃO HÁ NECESSIDADE DE COLOCAR UMA H()-->
+                    </div>
+
+                    <div class="text"> 
+                        <!--PRIMEIRA DIV COM A PRIMEIRA INFORMAÇÃO QUE SERÁ COLOCADA NO TIMING-->
+                        <h4>Sábado</h4> 
+                        <!--INFORMAÇÃO DA DIV COM UM H4 POIS É UM OUTRO SUBTITULO-->
+                        <span>08:00 AM - 13:00 PM</span> 
+                        <!--SPAN POIS É UMA SIMPLES INFORMAÇÃO E NÃO HÁ NECESSIDADE DE COLOCAR UMA H()-->
+                    </div>
+
+                    <div class="text"> 
+                        <!--PRIMEIRA DIV COM A PRIMEIRA INFORMAÇÃO QUE SERÁ COLOCADA NO TIMING-->
+                        <h4>Domingo</h4> 
+                        <!--INFORMAÇÃO DA DIV COM UM H4 POIS É UM OUTRO SUBTITULO-->
+                        <span>Fechado</span> 
+                        <!--SPAN POIS É UMA SIMPLES INFORMAÇÃO E NÃO HÁ NECESSIDADE DE COLOCAR UMA H()-->
+                    </div>
+
+                    <br> <!--BR PARA SALTEAR UMA LINHA PARA BAIXO E DAR UM CERTO ESPAÇAMENTO ENTRE OS ITENS-->
+
+                    <img src="images/loc-ic.png" alt="localização"> 
+                    <!--IMAGEM DE LOCALIZAÇÃO-->
+                    <span>Praia Porto das Dunas</span> 
+                    <!--SPAN POIS É UMA SIMPLES INFORMAÇÃO E NÃO HÁ NECESSIDADE DE COLOCAR UMA H()-->
+                    
+                    <br>
+
+                    <img src="images/phone-ic.png" alt="telefone"> 
+                    <!--IMAGEM DO TELEFONE DE CONTATO-->
+                    <span>(85) 99999-9999</span> 
+                    <!--SPAN POIS É UMA SIMPLES INFORMAÇÃO E NÃO HÁ NECESSIDADE DE COLOCAR UMA H()-->
+
+                </div>
+            </div>
+
+            <div class="experience">
+                <!--SEGUNDA PARTE DA SECTION ABOUT, PARDE DA DIREITA-->
+                <span>Uma história única</span>
+                <!--SPAN POIS NÃO HÁ NECESSIDADE DE SER UM SUBTITULO-->
+                <h2>70 anos de experiência</h2>
+                <!--SUBTITULO POIS ESSA FRASE TRAZ UMA CERTA RELEVANCIA-->
+                <div class="text">
+                    <!--DIVS AONDE FICARÃO OS PARAGRAFOS E OS TEXTOS ESCRITOS NELE-->
+                    <div>
+                        <p>
+                            <!--PRIMEIRO PARAGRAFO-->
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione saepe libero voluptates molestiae perspiciatis, adipisci, necessitatibus voluptatem aut culpa ipsum voluptas aperiam eius placeat asperiores earum sed. Porro, libero deleniti.
+                        </p>
+
+                        <p>
+                            <!--SEGUNDO PARAGRAFO-->
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus aut quos quaerat tempora harum, deleniti maxime fuga sed tenetur recusandae deserunt excepturi accusantium officiis sint obcaecati culpa in. Nesciunt.
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, sint eaque dolorem non inventore magnam. Ducimus facere tempore, quae vel minima, voluptas quasi odit accusantium maxime dolor fugit est placeat? 
+                        </p>
+                    </div>
+
+                    <img src="images/prancha1.1.png" alt="70 anos de experiência" class="prancha1-1">
+                    <!--IMAGEM COLOCADA AO LADO DOS PARÁGRAFOS-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <!--3 PARTE DO SITE-->
+        <div class="container">
+            <!--O OBJETIVO DESSE CONTAINER É PUXAR AS DIVS ABAIXO PARA O CENTRO, PORÉM SEM FAZER ESSE PROCESSO REPETIDAMENTE-->
+            <h2>Serviços</h2>
+            <!--H2 POIS A PALAVRA POSSUI UMA CERTA RELEVANCIA-->
+            <div class="boxes">
+                <!--DIV AONDE NOS CRIAMOS E ONDE FICARÃO INSERIDAS AS TRÊS CAIXAS CONTENDO INFORMAÇÕES DOS SERVIÇOS-->
+                <div class="box">
+                    <!--PRIMEIRA CAIXA-->
+                    <img src="images/surfando.png" alt="surfando" width="100px">
+                    <!--ICONE DA PRIMEIRA CAIXA-->
+                    <h4>Lorem Ipsum</h4>
+                    <!--TÍTULO DA PRIMEIRA CAIXA-->
+                    <p>
+                        <!--TEXTO REFERENTE AO SERVIÇO-->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vitae repellat cum quo excepturi accusantium reprehenderit beatae voluptatibus, dicta id natus ad, rem ab sint tenetur harum? Alias, tempora asperiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est sunt qui ipsam hic, veritatis quas necessitatibus totam deleniti voluptatibus debitis perspiciatis quod vel. Nemo dolore numquam id ipsam, hic sed?
+                    </p>
+                </div>
+
+                <div class="box">
+                    <!--SEGUNDA CAIXA-->
+                    <img src="images/surf (3).png" alt="surf3" width="100px">
+                    <!--ICONE DA SEGUNDA CAIXA-->
+                    <h4>Lorem ipsum</h4>
+                    <!--TÍTULO DA SEGUNDA CAIXA-->
+                    <p>
+                        <!--TEXTO REFERENTE AO SERVIÇO-->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam, pariatur excepturi officia eligendi vero nulla molestiae, quos nemo delectus dolores harum possimus tempora soluta repudiandae. Unde temporibus consequatur dicta.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate delectus alias tenetur perspiciatis numquam eveniet, similique officia quia! Sequi, est cum porro odio aut tempore ex doloribus voluptates dolorum similique.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <!--3 CAIXA-->
+                    <img src="images/surf (4).png" alt="surf4" width="100px">
+                    <!--ICONE DA 3 CAIXA-->
+                    <h4>Lorem Ipsum</h4>
+                    <!--TITULO DA TERCEIRA CAIXA-->
+                    <p>
+                        <!--TEXTO REFERENTE AO SERVIÇO-->
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ea animi ab temporibus delectus magni. Saepe voluptas sit nobis modi nulla, aut, deserunt quod voluptatum, pariatur velit inventore cumque quas?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quo molestiae veniam iure asperiores. Ea hic aperiam aliquid doloremque molestias distinctio iure totam, pariatur iste repellat ut animi aut dignissimos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="appointment">
+        <!--3 seção de agendamentos-->
+        <div class="container">
+            <!--container para que todos fiquem aliados-->
+            <h2>Faça um Agendamento</h2>
+            <!--Subtitulo com um h2 pois a frase possui uma certa relevancia semantica-->
+
+            <form>
+                <!--formulario para que sejam preenchido os dados-->
+                <div class="personal-data">
+                    <!--divs para que sejam inclusos os dados pessoais-->
+                    <div class="input-wrapper">
+                        <!--div que inclui os inputs-->
+                        <label>Nome</label>
+                        <input type="text" placeholder="Digite o seu nome">
+                        <!--tipo do input-->
+                    </div>
+                    <div class="input-wrapper">
+                        <!--div que inclui os inputs-->
+                        <label>E-mail</label>
+                        <input type="email" placeholder="Digite o seu e-mail">
+                        <!--tipo do input-->
+                    </div>
+                    <div class="input-wrapper">
+                        <!--div que inclui todos os inputs-->
+                        <label>Telefone</label>
+                        <input type="text" placeholder="Digite o seu número">
+                    </div>
+                    <div class="input-wrapper">
+                        <!--div que inclui os inputs-->
+                        <label>Tipo de serviço</label>
+                        <select>
+                            <option value="">Concerto 1</option>
+                            <option value="">Concerto 2</option>
+                            <option value="">Concerto 3</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="input-wrapper">
+                    <label>Mensagem:</label>
+                    <textarea></textarea>
+                </div>    
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <!--3 seção de agendamentos-->
+        <div class="container">
+            <!--container para que todos fiquem aliados-->
+            <h2>Galeria de fotos</h2>
+            <!--Subtitulo com um h2 pois a frase possui uma certa relevancia semantica-->
+
+            <div class="gallery-wrapper">
+                <div>
+                    <img src="images/prancha 1.jpg" alt="Galeria">
+                </div>
+                <div>
+                    <img src="images/prancha 2.jpg" alt="Galeria">
+                </div>
+                <div>
+                    <img src="images/prancha 3.jpg" alt="Galeria">
+                </div>
+                <div>
+                    <img src="images/prancha 4.jpg" alt="Galeria">
+                </div>
+                <div>
+                    <img src="images/prancha 5.jpg" alt="Galeria">
+                </div>
+                <div>
+                    <img src="images/prancha 6.jpeg" alt="Galeria"> 
+                </div>
+                <div>
+                    <img src="images/prancha 7.jpg" alt="Galeria">
+                </div>
+                <div>
+                    <img src="images/prancha8.jpg" alt="Galeria">
+                </div>
+                <div>
+                    <img src="images/prancha9.jpg" alt="Galeria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <div class="container">
+            <div class="head">
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img1.png" alt="Localização">
+                    </div>
+                    <div class="text">
+                       <span>Localização</span>
+                       <span>Porto das Dunas</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img2.png" alt="Localização">
+                    </div>
+                    <div class="text">
+                       <span>Telefone</span>
+                       <span>(85) 99999-9999</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img3.png" alt="Localização">
+                    </div>
+                    <div class="text">
+                       <span>E-mail</span>
+                       <span>contato@pranchariafortaleza.com</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img4.png" alt="Localização">
+                    </div>
+                    <div class="text">
+                       <span>Horáiro</span>
+                       <span>Seg. à Sex.: 9AM às 17PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15923.284073187278!2d-38.396119804119245!3d-3.848565369390501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c75b5641e86901%3A0x4d494d1fcd21641b!2sPorto%20das%20Dunas%2C%20Aquiraz%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1650913435704!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+     © 2022 Prancharia Fortaleza - Todos os direitos reservados
+    </footer>
+
+</body>
+</html>
